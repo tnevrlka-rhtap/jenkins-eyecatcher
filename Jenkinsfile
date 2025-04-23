@@ -14,7 +14,7 @@ pipeline {
             idleMinutes '30'
             containerTemplate {
                 name 'jnlp'
-                image 'quay.io/jkopriva/rhtap-jenkins-agent:0.1'
+                image 'quay.io/jkopriva/rhtap-jenkins-agent:0.6'
                 ttyEnabled true
                 args '${computer.jnlpmac} ${computer.name}'
             }
